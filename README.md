@@ -15,10 +15,10 @@ These questions are built upon two publicly available datasets of CT-Scans paire
 The questions where generated using templates automatically filled by leveraging the ground-truth segmentation masks.
 
  The questions are stored in 4 CSV files:
- - `questions/slicevqa_amos_single.csv`: the single image questions built upon **AMOS**.
- - `questions/slicevqa_liver_single.csv`: the single image questions built upon **MSD**.
- - `questions/slicevqa_amos_multi.csv`: the image pair questions built upon **AMOS**.
- - `questions/slicevqa_liver_multi.csv`: the image pair questions built upon **MSD**.
+ - `questions/slicevqa_amos_single.csv`: the single image questions built upon *AMOS*.
+ - `questions/slicevqa_liver_single.csv`: the single image questions built upon *MSD*.
+ - `questions/slicevqa_amos_multi.csv`: the image pair questions built upon *AMOS*.
+ - `questions/slicevqa_liver_multi.csv`: the image pair questions built upon *MSD*.
 
 Each of these files contains 300 questions, there is a total of **1200 questions**.
 
@@ -30,6 +30,7 @@ The CSV files of single image questions present the following columns:
 * `slice_index`: the index of sthe lice of which the question is about.
 * `question_type`: the category of the question.
 * `question`: the text of the question.
+* `spacing_info` the spacing in millimeters of the 2D axial slice. 
 
 The questions types are the following:
 * `average_intensity` e.g., "What is the average intensity of aorta in this image?"
@@ -43,6 +44,7 @@ The questions types are the following:
 * `surface_area` e.g., "What is the aorta's surface area in square millimeters as shown in this image?"
 * `targert_count` e.g. "How many liver tumors are there in this image?"
 
+
 ## Image Pair Questions
 
 The CSV files of image pair questions present the following columns:
@@ -53,6 +55,8 @@ The CSV files of image pair questions present the following columns:
 * `label`: segmentation label that has been used to infer the result of the question.
 * `question_type`: the category of the question.
 * `question`: the text of the question.
+* `spacing_info_1` the spacing in millimeters of the 2D axial slice of the first volume.
+* `spacing_info_2` the spacing in millimeters of the 2D axial slice of the first volume. 
 
 The questions types are the following:
 * `common_organs`, (only for AMOS) e.g., "Is there at least 2 common organs displayed in both images?"
