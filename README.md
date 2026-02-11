@@ -6,7 +6,7 @@ The benchmark is inspired by radiologists' workflow who inspect 3D CT-scans by s
 
 These questions are built upon two publicly available datasets of CT-Scans paired with segmentation masks to be used as images:
 * *AMOS*, a multi-organ segmentation dataset.
-* THe `liver` task of the *Medical Segmentation Decathlon (MSD)* dataset including CT-scans and associated segmentation masks of the liver and hepatic lesions.
+* The `liver` task of the *Medical Segmentation Decathlon (MSD)* dataset including CT-scans and associated segmentation masks of the liver and hepatic lesions.
 
 The questions were generated using templates automatically filled by leveraging the ground-truth segmentation masks.
 
