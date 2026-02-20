@@ -29,16 +29,23 @@ The CSV files of single image questions present the following columns:
 * `spacing_info` the spacing in millimeters of the 2D axial slice. 
 
 The questions types are the following:
-* `average_intensity` e.g., "What is the average intensity of aorta in this image?"
-* `diameter` e.g., "What is the aorta's diameter in millimeters as shown in this image?"
-* `extreme_position` (only for AMOS) e.g., "Which organ is left most in this image?"
+
+
+**Closed-ended questions**
 * `is_brighter` e.g., "Does the right kidney appear brighter compared to the left kidney?"
 * `ìs_function_present` e.g., "Does the image show an organ involved in regulating stress hormones?"
 * `is_healthy` (only for MSD liver) e.g., "Is the liver healthy in this image?"
 * `is_larger` e.g., "Is gallbladder larger than postcava?"
-* `relative_position` e.g. "What organ is located on the left side of the aorta in this image?"
-* `surface_area` e.g., "What is the aorta's surface area in square millimeters as shown in this image?"
+  
+**Open-ended questions**
 * `target_count` e.g. "How many liver tumors are there in this image?"
+* `relative_position` e.g. "What organ is located on the left side of the aorta in this image?"
+* `extreme_position` (only for AMOS) e.g., "Which organ is left most in this image?"
+
+**Numerical questions**
+* `surface_area` e.g., "What is the aorta's surface area in square millimeters as shown in this image?"
+* `average_intensity` e.g., "What is the average intensity of aorta in this image?"
+* `diameter` e.g., "What is the aorta's diameter in millimeters as shown in this image?"
 
 
 ## Image Pair Questions
@@ -55,11 +62,15 @@ The CSV files of image pair questions present the following columns:
 * `spacing_info_2` the spacing in millimeters of the 2D axial slice of the second volume. 
 
 The questions types are the following:
+
+**Closed-ended questions**
 * `common_organs`, (only for AMOS) e.g., "Is there at least 2 common organs displayed in both images?"
-* `diameter_evolution`, e.g., "What is the difference in diameter (in mm) between the largest liver tumor in the first image and the largest one in the second image?"
 * `is_bright_compare`, e.g., "Is liver brighter in the first image than the second image?"
 * `is_larger_comparison`, e.g., "Is aorta bigger in the first image than the second image?"
 * `is_present_target_both`, e.g., "Is there liver in both images?"
+
+**Numerical questions** 
+* `diameter_evolution`, e.g., "What is the difference in diameter (in mm) between the largest liver tumor in the first image and the largest one in the second image?"
 * `surface_evolution`, e.g., "What is the difference in total surface area in mm2 of liver tumor between the first and second image?"
 
 ## License
