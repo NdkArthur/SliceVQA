@@ -79,9 +79,12 @@ The content of this repository is shared under the **Creative Commons Attributio
 
 ## Citations
 
+*MeVisQA*:
+> F. Hong, M. Anselmet, and A. Ndoko, “MeVisQA: Medical Visual Question Answering via Visual Programming,” presented at the First Workshop on Stable Adaptation and Faithful Evaluation of Reasoning in Medical Foundation Models, Aug. 2026.
+
 *AMOS*:
 > Ji, Y., et al, "AMOS: A Large-Scale Abdominal Multi-Organ Benchmark for Versatile Medical Image Segmentation," in Advances in Neural Information Processing Systems, 2022, pp. 36722–36732.
 
 *Medical Segmentation Decathlon*:
-> Antonelli, M., Reinke, A., Bakas, S. et al. The Medical Segmentation Decathlon. Nat Commun 13, 4128 (2022). https://doi.org/10.1038/s41467-022-30695-9
+> Antonelli, M., Reinke, A., Bakas, S. et al. The Medical Segmentation Decathlon. Nat Commun 13, 4128 (2022).
 
